@@ -3,3 +3,8 @@ h1 {
   font-family: Arial;
   text-align: center;
 }
+
+/* table */
+table {
+  margin: auto;
+}
