@@ -13,3 +13,9 @@ table {
   background: LightBlue;
   padding: 10px;  
 }
+
+#preview {
+  height: 70vh;
+  border-radius: 7px;
+  background: #CCCCCC;
+}
