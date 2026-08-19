@@ -31,3 +31,7 @@ table {
   padding-left: 5vw;
   background-color: transparent;
 }
+
+#empty {
+  width: 45vw;
+}
