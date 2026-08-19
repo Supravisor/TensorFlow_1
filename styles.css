@@ -1,4 +1,9 @@
 
+body {
+  background: #FF6F00;
+  font-family: Arial;
+}
+
 h1 {
   font-family: Arial;
   text-align: center;
