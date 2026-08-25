@@ -11,6 +11,7 @@ const tensor = stat => {
   } else if (value.value === "") {
     return alert("Please enter a value in the 'value' field, in the 'Create Tensor' section");
   } else {
+      let keepOne = "";
 
   }
 }
