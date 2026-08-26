@@ -16,6 +16,7 @@ const tensor = stat => {
       let degree = Math.floor(rank.value);
       let array = [];
       let string = value.value;
+      let bracket = 0;
 
   }
 }
