@@ -12,6 +12,16 @@ const tensor = stat => {
     return alert("Please enter a value in the 'value' field, in the 'Create Tensor' section");
   } else {
       let keepOne = "";
+      let keepTwo = "";
+      let degree = Math.floor(rank.value);
+      let array = [];
+      let string = value.value;
+      let bracket = 0;
+
+      if (value.value.includes(",")) {
+        let trim = value.value.split(/\s*,\s*/);
+        array = trim.map(el => el.trim());
+      }
 
   }
 }
