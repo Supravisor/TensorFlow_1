@@ -15,6 +15,7 @@ const tensor = stat => {
       let keepTwo = "";
       let degree = Math.floor(rank.value);
       let array = [];
+      let string = value.value;
 
   }
 }
