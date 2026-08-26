@@ -13,6 +13,7 @@ const tensor = stat => {
   } else {
       let keepOne = "";
       let keepTwo = "";
+      let degree = Math.floor(rank.value);
 
   }
 }
