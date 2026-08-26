@@ -20,7 +20,7 @@ const tensor = stat => {
 
       if (value.value.includes(",")) {
         let trim = value.value.split(/\s*,\s*/);
-
+        array = trim.map(el => el.trim());
       }
 
   }
