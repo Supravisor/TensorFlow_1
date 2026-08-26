@@ -19,6 +19,7 @@ const tensor = stat => {
       let bracket = 0;
 
       if (value.value.includes(",")) {
+        let trim = value.value.split(/\s*,\s*/);
 
       }
 
