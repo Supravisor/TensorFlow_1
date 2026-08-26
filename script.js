@@ -18,5 +18,9 @@ const tensor = stat => {
       let string = value.value;
       let bracket = 0;
 
+      if (value.value.includes(",")) {
+
+      }
+
   }
 }
