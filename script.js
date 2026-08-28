@@ -26,7 +26,7 @@ const tensor = stat => {
           let average = array.length / degree;
 
           if (parseInt(average) - average !== 0) {
-
+            return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
           }
 
         }
