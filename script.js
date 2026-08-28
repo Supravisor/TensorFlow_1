@@ -25,6 +25,10 @@ const tensor = stat => {
         if (degree > 1) {
           let average = array.length / degree;
 
+          if (parseInt(average) - average !== 0) {
+
+          }
+
         }
       }
 
