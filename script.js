@@ -21,6 +21,22 @@ const tensor = stat => {
       if (value.value.includes(",")) {
         let trim = value.value.split(/\s*,\s*/);
         array = trim.map(el => el.trim());
+
+        if (degree > 1) {
+          let average = array.length / degree;
+
+          if (parseInt(average) - average !== 0) {
+            return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
+          }
+
+          let nest = [];
+
+          if (average > 0) {
+            let counter = 0;
+
+          }
+
+        }
       }
 
   }
