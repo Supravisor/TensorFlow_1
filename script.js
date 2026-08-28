@@ -23,6 +23,7 @@ const tensor = stat => {
         array = trim.map(el => el.trim());
 
         if (degree > 1) {
+          let average = array.length / degree;
 
         }
       }
