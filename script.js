@@ -31,6 +31,10 @@ const tensor = stat => {
 
           let nest = [];
 
+          if (average > 0) {
+
+          }
+
         }
       }
 
