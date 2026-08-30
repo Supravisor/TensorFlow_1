@@ -39,8 +39,10 @@ const tensor = stat => {
                 if (datatype.value === "string") {
                   let join = string.slice();
                   nest += join.join(",").replaceAll(/\s*,\s*/g, '", "') + '"], ["';
+                } else {
 
                 }
+
 
             }
 
