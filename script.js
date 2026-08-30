@@ -35,6 +35,7 @@ const tensor = stat => {
             let counter = 0;
 
             while (counter < array.length) {
+              let string = array.slice(counter, average + counter);
 
             }
 
