@@ -34,6 +34,10 @@ const tensor = stat => {
           if (average > 0) {
             let counter = 0;
 
+            while (counter < array.length) {
+
+            }
+
           }
 
         }
