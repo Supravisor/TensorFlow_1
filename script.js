@@ -40,6 +40,7 @@ const tensor = stat => {
                   let join = string.slice();
                   nest += join.join(",").replaceAll(/\s*,\s*/g, '", "') + '"], ["';
                 } else {
+                    let join = string.slice();
 
                 }
 
