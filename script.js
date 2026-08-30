@@ -37,6 +37,7 @@ const tensor = stat => {
             while (counter < array.length) {
               let string = array.slice(counter, average + counter);
                 if (datatype.value === "string") {
+                  let join = string.slice();
 
                 }
 
