@@ -41,13 +41,20 @@ const tensor = stat => {
                   nest += join.join(",").replaceAll(/\s*,\s*/g, '", "') + '"], ["';
                 } else {
                     let join = string.slice();
-
+                    nest += join.join(",").replaceAll(/\s*,\s*/g, ', ')  + '], [';
                 }
-
-
+                counter += average
             }
 
+            if (datatype.value === "string") {
+              string = nest.slice(0, -5).replace(/\s*,\s*/, ", ");
+            } else {
+                string = nest.slice(0, -4).replace(/\s*,\s*/, ", ");
+            }
+          } else {
+              return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
           }
+
 
         }
       }
