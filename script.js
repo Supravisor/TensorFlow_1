@@ -61,6 +61,9 @@ const tensor = stat => {
         if(array.length === 0) {
           keepTwo = '"';
         }
+
+        keepOne = '"';
+
       }
 
   }
