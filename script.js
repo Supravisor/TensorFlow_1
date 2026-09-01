@@ -43,8 +43,10 @@ const tensor = stat => {
                     let join = string.slice();
                     nest += join.join(",").replaceAll(/\s*,\s*/g, ', ')  + '], [';
                 }
-
                 counter += average
+            }
+
+            if (datatype.value === "string") {
 
             }
 
