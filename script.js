@@ -60,14 +60,15 @@ const tensor = stat => {
       if (datatype.value === "string") {
         if (array.length === 0) {
           keepTwo = '"';
-        } else if (datatype.value === "float64" || datatype.value === "int32" || datatype.value === "int16") {
-          if (Number(value.value) >= 0) {
-          }
         }
 
         keepOne = '"';
 
-      }
+      } else if (datatype.value === "float64" || datatype.value === "int32" || datatype.value === "int16") {
+          if (Number(value.value) >= 0) {
+          } else if (array.length > 0) {
 
+          }
+        }
   }
 }
