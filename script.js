@@ -48,7 +48,10 @@ const tensor = stat => {
 
             if (datatype.value === "string") {
               string = nest.slice(0, -5).replace(/\s*,\s*/, ", ");
+            } else {
+
             }
+
 
           }
 
