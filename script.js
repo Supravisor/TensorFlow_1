@@ -44,6 +44,7 @@ const tensor = stat => {
                     nest += join.join(",").replaceAll(/\s*,\s*/g, ', ')  + '], [';
                 }
 
+                counter += average
 
             }
 
