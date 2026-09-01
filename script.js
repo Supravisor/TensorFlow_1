@@ -52,7 +52,7 @@ const tensor = stat => {
                 string = nest.slice(0, -4).replace(/\s*,\s*/, ", ");
             }
           } else {
-
+              return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
           }
 
 
