@@ -54,10 +54,24 @@ const tensor = stat => {
           } else {
               return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
           }
-
-
         }
       }
 
+      if (datatype.value === "string") {
+        if (array.length === 0) {
+          keepTwo = '"';
+        }
+
+        keepOne = '"';
+
+      } else if (datatype.value === "float64" || datatype.value === "int32" || datatype.value === "int16") {
+          if (Number(value.value) >= 0) {
+          } else if (array.length > 0) {
+              if (array.every(el => Number(el))) {
+              } else {
+                  return alert("Please enter a number for the 'value' field in the 'Create Tensor' section");
+              }
+          }
+      }
   }
 }
