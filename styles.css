@@ -58,6 +58,11 @@ td {
   background: #FFE873;
 }
 
+.btn-success {
+  background: #5cb85c;
+  border-color: green;
+}
+
 /* form control */
 
 select {
