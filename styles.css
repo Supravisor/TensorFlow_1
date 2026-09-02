@@ -58,6 +58,20 @@ td {
   background: #FFE873;
 }
 
+.btn-success {
+  background: #5cb85c;
+  border-color: green;
+}
+
+.btn-success {
+  color: white;
+}
+
+.btn-success:hover {
+  background: #449d44;
+  border-color: #398439;
+}
+
 /* form control */
 
 select {

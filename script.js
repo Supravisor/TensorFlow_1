@@ -73,5 +73,7 @@ const tensor = stat => {
               }
           }
       }
+
+      document.editor.textbox.value+= '\n' + variable.value + ' = tf.' + stat + '(' + '['.repeat(degree) + keepOne + string + keepTwo + ']'.repeat(degree) + ', dtype=tf.' + datatype.value + ')';
   }
 }
