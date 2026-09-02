@@ -63,6 +63,10 @@ td {
   border-color: green;
 }
 
+.btn-success {
+  color: white;
+}
+
 /* form control */
 
 select {
