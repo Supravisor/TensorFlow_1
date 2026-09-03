@@ -47,6 +47,12 @@ td {
 
 /* button */
 
+input {
+  padding: 2px 3px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
 .btn {
   padding: 14px 12px;
   border-radius: 4px;
