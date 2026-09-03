@@ -9,7 +9,7 @@ const tensor = stat => {
   if (variable.value === "") {
     return alert("Please enter a variable name in the 'variable' field, in the 'Create Tensor' section");
   } else if (value.value === "") {
-    return alert("Please enter a value in the 'value' field, in the 'Create Tensor' section");
+    return alert("Please enter a comma separated list of integers, floats, or Booleans in the 'value' field, in the 'Create Tensor' section");
   } else {
       let keepOne = "";
       let keepTwo = "";
@@ -76,4 +76,9 @@ const tensor = stat => {
 
       document.editor.textbox.value+= '\n' + variable.value + ' = tf.' + stat + '(' + '['.repeat(degree) + keepOne + string + keepTwo + ']'.repeat(degree) + ', dtype=tf.' + datatype.value + ')';
   }
+}
+
+// Data at a glance
+const data = (stat) => {
+
 }
