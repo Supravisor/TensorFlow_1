@@ -79,10 +79,10 @@ const tensor = stat => {
 }
 
 // Data at a glance
-// Data at a glance
-
 const data = (stat) => {
   if (variable.value === "") {
     return alert("Please enter a variable name in the 'Create Tensor' section");
+  } else {
+      document.editor.textbox.value+= '\ntf.' + stat.slice(0, -2) + '(' + document.editor.variable.value + ')';
   }
 }
