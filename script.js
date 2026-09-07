@@ -88,5 +88,7 @@ const data = (stat) => {
 }
 
 const shape = (stat) => {
-
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Load data' section");
+  }
 }
