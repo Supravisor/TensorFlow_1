@@ -79,6 +79,10 @@ const tensor = stat => {
 }
 
 // Data at a glance
-const data = (stat) => {
+// Data at a glance
 
+const data = (stat) => {
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Create Tensor' section");
+  }
 }
