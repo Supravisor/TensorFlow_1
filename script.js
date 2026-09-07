@@ -86,3 +86,7 @@ const data = (stat) => {
       document.editor.textbox.value+= '\ntf.' + stat.slice(0, -2) + '(' + document.editor.variable.value + ')';
   }
 }
+
+const shape = (stat) => {
+
+}
