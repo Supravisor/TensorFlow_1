@@ -70,7 +70,7 @@ input {
   border-color: green;
 }
 
-.btn-success {
+.btn-success, .btn-data {
   color: white;
 }
 
