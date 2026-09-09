@@ -94,3 +94,7 @@ const shape = (stat) => {
       document.editor.textbox.value+= '\n' + document.editor.variable.value  + '.' + stat;
   }
 }
+
+// Tensor functions
+let batch = document.getElementById("batch");
+let row = document.getElementById("row");
