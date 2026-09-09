@@ -97,3 +97,4 @@ const shape = (stat) => {
 
 // Tensor functions
 let batch = document.getElementById("batch");
+let row = document.getElementById("row");
