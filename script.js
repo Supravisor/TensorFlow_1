@@ -109,5 +109,7 @@ const onesZerosFunc = (arg) => {
       return alert("Please enter a number in the 'row' field in the 'Tensor functions' section.");
   } else if (column.value === "") {
       return alert("Please enter a number in the 'column' field in the 'Tensor functions' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variable.value + " = tf." + arg + "([" + batch.value + ", " + row.value + ", " + column.value + "])";
   }
 }
