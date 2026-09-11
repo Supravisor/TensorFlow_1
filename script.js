@@ -101,5 +101,7 @@ let row = document.getElementById("row");
 let column = document.getElementById("column");
 
 const onesZerosFunc = (arg) => {
-
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Load data' section");
+  }
 }
