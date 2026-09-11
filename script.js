@@ -103,5 +103,7 @@ let column = document.getElementById("column");
 const onesZerosFunc = (arg) => {
   if (variable.value === "") {
     return alert("Please enter a variable name in the 'Load data' section");
+  } else if (batch.value === "") {
+      return alert("Please enter a number in the 'batch' field in the 'Tensor functions' section.");
   }
 }
