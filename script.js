@@ -126,5 +126,6 @@ const reshape = (arg) => {
         keep = ", " + column.value;
       }
 
+      document.editor.textbox.value+="\n" + variable.value + "_1 = tf." + arg + "(" + variable.value + ", [" + batch.value + ", " + row.value + keep + "])";
   }
 }
