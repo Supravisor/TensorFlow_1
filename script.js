@@ -115,7 +115,9 @@ const onesZerosFunc = (arg) => {
 }
 
 const reshape = (arg) => {
-  if (batch.value === "") {
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Create Tensor' section");
+  } else if (batch.value === "") {
       return alert("Please enter a number in the 'batch' field.");
   } else if (row.value === "") {
       return alert("Please enter a number in the 'row' field.");
