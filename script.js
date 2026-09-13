@@ -122,5 +122,9 @@ const reshape = (arg) => {
   } else {
       let keep = "";
 
+      if (column.value) {
+
+      }
+
   }
 }
