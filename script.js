@@ -102,7 +102,7 @@ let column = document.getElementById("column");
 
 const onesZerosFunc = (arg) => {
   if (variable.value === "") {
-    return alert("Please enter a variable name in the 'Load data' section");
+    return alert("Please enter a variable name in the 'Create Tensor' section");
   } else if (batch.value === "") {
       return alert("Please enter a number in the 'batch' field in the 'Tensor functions' section.");
   } else if (row.value === "") {
@@ -115,7 +115,19 @@ const onesZerosFunc = (arg) => {
 }
 
 const reshape = (arg) => {
-  if (batch.value === "") {
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Create Tensor' section");
+  } else if (batch.value === "") {
       return alert("Please enter a number in the 'batch' field.");
+  } else if (row.value === "") {
+      return alert("Please enter a number in the 'row' field.");
+  } else {
+      let keep = "";
+
+      if (column.value) {
+        keep = ", " + column.value;
+      }
+
+      document.editor.textbox.value+="\n" + variable.value + "_1 = tf." + arg + "(" + variable.value + ", [" + batch.value + ", " + row.value + keep + "])";
   }
 }
