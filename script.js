@@ -113,3 +113,9 @@ const onesZerosFunc = (arg) => {
       document.editor.textbox.value+="\n" + variable.value + " = tf." + arg + "([" + batch.value + ", " + row.value + ", " + column.value + "])";
   }
 }
+
+const reshape = (arg) => {
+  if (batch.value === "") {
+      return alert("Please enter a number in the 'batch' field.");
+  }
+}

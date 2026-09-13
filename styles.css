@@ -70,7 +70,7 @@ input {
   border-color: green;
 }
 
-.btn-success, .btn-data {
+.btn-success, .btn-data, .btn-primary {
   color: white;
 }
 
@@ -86,6 +86,11 @@ input {
 .btn-primary {
   background: #5c5cb8;
   border-color: rgb(70, 30, 255);
+}
+
+.btn-primary:hover {
+  background: #204d74;
+  border-color: #2E6DA3;
 }
 
 /* form control */
