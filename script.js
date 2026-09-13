@@ -123,7 +123,7 @@ const reshape = (arg) => {
       let keep = "";
 
       if (column.value) {
-
+        keep = ", " + column.value;
       }
 
   }
