@@ -120,6 +120,7 @@ const reshape = (arg) => {
   } else if (row.value === "") {
       return alert("Please enter a number in the 'row' field.");
   } else {
+      let keep = "";
 
   }
 }
