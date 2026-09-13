@@ -115,5 +115,7 @@ const onesZerosFunc = (arg) => {
 }
 
 const reshape = (arg) => {
-
+  if (batch.value === "") {
+      return alert("Please enter a number in the 'batch' field.");
+  }
 }
