@@ -113,3 +113,7 @@ const onesZerosFunc = (arg) => {
       document.editor.textbox.value+="\n" + variable.value + " = tf." + arg + "([" + batch.value + ", " + row.value + ", " + column.value + "])";
   }
 }
+
+const reshape = (arg) => {
+
+}
