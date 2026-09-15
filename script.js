@@ -142,7 +142,7 @@ const access = () => {
       let keep = "";
 
       if (column.value) {
-
+        keep = ", " + column.value;
       }
 
   }
