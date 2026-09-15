@@ -131,3 +131,8 @@ const reshape = (arg) => {
       document.editor.textbox.value+="\n" + variable.value + "_1 = tf." + arg + "(" + variable.value + ", [" + batch.value + ", " + row.value + keep + "])";
   }
 }
+
+// Select 
+const access = () => {
+
+}
