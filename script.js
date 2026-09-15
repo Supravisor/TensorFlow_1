@@ -139,6 +139,7 @@ const access = () => {
   } else if (row.value === "") {
       return alert("Please enter a number in the 'row' field in the 'Tensor functions' section.");
   } else {
+      let keep = "";
 
   }
 }
