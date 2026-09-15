@@ -141,5 +141,9 @@ const access = () => {
   } else {
       let keep = "";
 
+      if (column.value) {
+
+      }
+
   }
 }
