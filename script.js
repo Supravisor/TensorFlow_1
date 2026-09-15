@@ -7,9 +7,9 @@ let rank = document.getElementById("rank");
 
 const tensor = stat => {
   if (variable.value === "") {
-    return alert("Please enter a variable name in the 'variable' field, in the 'Create Tensor' section");
+    return alert("Please enter a variable name in the 'variable' field, in the 'Create Tensor' section.");
   } else if (value.value === "") {
-    return alert("Please enter a comma separated list of integers, floats, or Booleans in the 'value' field, in the 'Create Tensor' section");
+    return alert("Please enter a comma separated list of integers, floats, or Booleans in the 'value' field, in the 'Create Tensor' section.");
   } else {
       let keepOne = "";
       let keepTwo = "";
@@ -26,7 +26,7 @@ const tensor = stat => {
           let average = array.length / degree;
 
           if (parseInt(average) - average !== 0) {
-            return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
+            return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section.");
           }
 
           let nest = [];
@@ -52,7 +52,7 @@ const tensor = stat => {
                 string = nest.slice(0, -4).replace(/\s*,\s*/, ", ");
             }
           } else {
-              return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section");
+              return alert("Please enter more values in the 'value' field for the selected 'rank' in the 'Create Tensor' section.");
           }
         }
       }
@@ -69,7 +69,7 @@ const tensor = stat => {
           } else if (array.length > 0) {
               if (array.every(el => Number(el))) {
               } else {
-                  return alert("Please enter a number for the 'value' field in the 'Create Tensor' section");
+                  return alert("Please enter a number for the 'value' field in the 'Create Tensor' section.");
               }
           }
       }
@@ -81,7 +81,7 @@ const tensor = stat => {
 // Data at a glance
 const data = (stat) => {
   if (variable.value === "") {
-    return alert("Please enter a variable name in the 'Create Tensor' section");
+    return alert("Please enter a variable name in the 'Create Tensor' section.");
   } else {
       document.editor.textbox.value+= '\ntf.' + stat.slice(0, -2) + '(' + document.editor.variable.value + ')';
   }
@@ -89,7 +89,7 @@ const data = (stat) => {
 
 const shape = (stat) => {
   if (variable.value === "") {
-    return alert("Please enter a variable name in the 'Load data' section");
+    return alert("Please enter a variable name in the 'Create Tensor' section.");
   } else {
       document.editor.textbox.value+= '\n' + document.editor.variable.value  + '.' + stat;
   }
@@ -102,7 +102,7 @@ let column = document.getElementById("column");
 
 const onesZerosFunc = (arg) => {
   if (variable.value === "") {
-    return alert("Please enter a variable name in the 'Create Tensor' section");
+    return alert("Please enter a variable name in the 'Create Tensor' section.");
   } else if (batch.value === "") {
       return alert("Please enter a number in the 'batch' field in the 'Tensor functions' section.");
   } else if (row.value === "") {
@@ -116,7 +116,7 @@ const onesZerosFunc = (arg) => {
 
 const reshape = (arg) => {
   if (variable.value === "") {
-    return alert("Please enter a variable name in the 'Create Tensor' section");
+    return alert("Please enter a variable name in the 'Create Tensor' section.");
   } else if (batch.value === "") {
       return alert("Please enter a number in the 'batch' field in the 'Tensor functions' section.");
   } else if (row.value === "") {
@@ -134,5 +134,7 @@ const reshape = (arg) => {
 
 // Select 
 const access = () => {
-
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Create Tensor' section.");
+  }
 }
