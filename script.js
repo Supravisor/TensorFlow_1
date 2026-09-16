@@ -172,5 +172,7 @@ const accessColumn = () => {
       return alert("Please enter a number in the 'rows' field in the 'Select' section.");
   } else if (columns.value === "") {
       return alert("Please enter a number in the 'columns' field in the 'Select' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variable.value + "_column = " + variable.value + "[" + row.value + ":" + rows.value + ", " + columns.value + "]";
   }
 }
