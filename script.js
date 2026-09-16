@@ -170,5 +170,7 @@ const accessColumn = () => {
       return alert("Please enter a number in the 'row' field in the 'Tensor functions' section.");
   } else if (rows.value === "") {
       return alert("Please enter a number in the 'rows' field in the 'Select' section.");
+  } else if (columns.value === "") {
+      return alert("Please enter a number in the 'columns' field in the 'Select' section.");
   }
 }
