@@ -133,6 +133,8 @@ const reshape = (arg) => {
 }
 
 // Select 
+let rows = document.getElementById("rows");
+
 const access = () => {
   if (variable.value === "") {
     return alert("Please enter a variable name in the 'Create Tensor' section.");
