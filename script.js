@@ -133,6 +133,8 @@ const reshape = (arg) => {
 }
 
 // Select 
+let rows = document.getElementById("rows");
+
 const access = () => {
   if (variable.value === "") {
     return alert("Please enter a variable name in the 'Create Tensor' section.");
@@ -145,5 +147,18 @@ const access = () => {
         keep = ", " + column.value;
       }
 
+      document.editor.textbox.value+="\n" + variable.value + "_select = " + variable.value + "[" + row.value + keep + "]";
+  }
+}
+
+const accessRows = () => {
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Create Tensor' section");
+  } else if (row.value === "") {
+      return alert("Please enter a number in the 'row' field in the 'Tensor functions' section.");
+  } else if (rows.value === "") {
+      return alert("Please enter a number in the 'rows' field in the 'Select' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variable.value + "_rows = " + variable.value + "[" + row.value + "::" + rows.value + "]";
   }
 }
