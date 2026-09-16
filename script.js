@@ -166,5 +166,7 @@ const accessRows = () => {
 const accessColumn = () => {
   if (variable.value === "") {
     return alert("Please enter a variable name in the 'Create Tensor' section");
+  } else if (row.value === "") {
+      return alert("Please enter a number in the 'row' field in the 'Tensor functions' section.");
   }
 }
