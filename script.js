@@ -150,5 +150,7 @@ const access = () => {
 }
 
 const accessRows = () => {
-
+  if (variable.value === "") {
+    return alert("Please enter a variable name in the 'Create Tensor' section");
+  }
 }
