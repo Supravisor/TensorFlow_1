@@ -145,5 +145,6 @@ const access = () => {
         keep = ", " + column.value;
       }
 
+      document.editor.textbox.value+="\n" + variable.value + "_select = " + variable.value + "[" + row.value + keep + "]";
   }
 }
