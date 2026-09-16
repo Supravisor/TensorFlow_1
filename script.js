@@ -162,3 +162,7 @@ const accessRows = () => {
       document.editor.textbox.value+="\n" + variable.value + "_rows = " + variable.value + "[" + row.value + "::" + rows.value + "]";
   }
 }
+
+const accessColumn = () => {
+
+}
