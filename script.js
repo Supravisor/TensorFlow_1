@@ -134,6 +134,7 @@ const reshape = (arg) => {
 
 // Select 
 let rows = document.getElementById("rows");
+let columns = document.getElementById("columns");
 
 const access = () => {
   if (variable.value === "") {
